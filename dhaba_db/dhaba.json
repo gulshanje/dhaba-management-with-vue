@@ -1,0 +1,32 @@
+{
+  "appname": {
+    "appname": "Dhaba Management"
+  },
+  "users": [
+
+    {
+      "id": "3af5",
+      "name": "Test Uset Three",
+      "email": "testuthree@test.com",
+      "password": "12345"
+    },
+    {
+      "id": "1252",
+      "name": "Admin",
+      "email": "admin@test.com",
+      "password": "12345"
+    },
+    {
+      "id": "c1a8",
+      "name": "Test User One",
+      "email": "testuone@test.com",
+      "password": "12345"
+    },
+    {
+      "id": "3659",
+      "name": "Test user Two",
+      "email": "testutwo@test.com",
+      "password": "12345"
+    }
+  ]
+}

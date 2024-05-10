@@ -1,6 +1,5 @@
 <template>
   <img class="logo" alt="Vue logo" src="./assets/dhaba.jpeg" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
   <SignUp />
 </template>
 

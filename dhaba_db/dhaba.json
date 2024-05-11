@@ -4,69 +4,21 @@
   },
   "users": [
     {
-      "id": "3af5",
-      "name": "Test Uset Three",
-      "email": "testuthree@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "1252",
+      "id": "1",
       "name": "Admin",
       "email": "admin@test.com",
       "password": "12345"
     },
     {
-      "id": "c1a8",
-      "name": "Test User One",
-      "email": "testuone@test.com",
+      "id": "6c3c",
+      "name": "User One",
+      "email": "userone@test.com",
       "password": "12345"
     },
     {
-      "id": "3659",
-      "name": "Test user Two",
-      "email": "testutwo@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "c255",
-      "name": "mursu",
-      "email": "mursu@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "27e4",
-      "name": "Test user Two",
-      "email": "testutwo@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "e3ea",
-      "name": "moi",
-      "email": "moi@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "717e",
-      "name": "testing",
-      "email": "testing@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "be8a",
-      "name": "testing",
-      "email": "testing@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "d726",
-      "name": "testing",
-      "email": "testing@test.com",
-      "password": "12345"
-    },
-    {
-      "id": "95ca",
-      "name": "testig",
-      "email": "tes@test.com",
+      "id": "a586",
+      "name": "dum",
+      "email": "dum@test.com",
       "password": "12345"
     }
   ]

@@ -1,14 +1,13 @@
 <template>
-  <img class="logo" alt="Vue logo" src="./assets/dhaba.jpeg" />
-  <SignUp />
+ <router-view />
 </template>
 
 <script>
-import SignUp from "./components/SignUp.vue";
+
 export default {
   name: "App",
   components: {
-    SignUp,
+   
   },
 };
 </script>

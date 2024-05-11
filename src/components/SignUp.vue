@@ -1,5 +1,7 @@
 <template>
   <div>
+    <img class="logo" alt="Vue logo" src="../assets/dhaba.jpeg" />
+
     <h1>SignUp</h1>
     <div class="register">
       <input type="text" placeholder="Name" v-model="name" />
@@ -13,6 +15,7 @@
 
 <script>
 import axios from 'axios';
+
 export default {
   name: "SignUp",
   data() {
@@ -34,10 +37,10 @@ export default {
       console.warn('result - ',result)
       if(result.status == 201)
       {
-        console.log('User Created', this.name, this.email, this.password);
-        alert('Sign up successful');
+        localStorage.setItem("user-info", JSON.stringify(result.data))
+        this.$router.push({name: 'Home'})
       }
-      localStorage.setItem("user-info", JSON.stringify(result.data))
+      
     }
   }
 };

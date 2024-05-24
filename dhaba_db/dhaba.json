@@ -20,6 +20,32 @@
       "name": "dum",
       "email": "dum@test.com",
       "password": "12345"
+    },
+    {
+      "id": "1cf6",
+      "name": "local",
+      "email": "local@test.com",
+      "password": "12345"
+    }
+  ],
+  "dhabas": [
+    {
+      "name": "test1",
+      "address": "test - uodated",
+      "contact": "22234545",
+      "id": "e3eb"
+    },
+    {
+      "name": "dummy 1",
+      "address": "GANAUR CITY",
+      "contact": "1242423",
+      "id": "260f"
+    },
+    {
+      "id": "6c4d",
+      "name": "Test vue ",
+      "address": "osoite on 1",
+      "contact": "90202"
     }
   ]
 }

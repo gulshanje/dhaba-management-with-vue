@@ -28,7 +28,6 @@ export default {
   methods: {
     async signUp()
     {
-      console.warn(this.name, this.email, this.password)
       let result = await axios.post("http://localhost:3000/users", {
         name: this.name,
         email: this.email,
@@ -55,7 +54,7 @@ export default {
 </script>
 
 <style scoped>
-.register input{
+.register input, .login input, .add input{
   width: 300px;
   height: 40px;
   padding-left: 20px;
@@ -67,7 +66,7 @@ export default {
   cursor: pointer;
 }
 
-.register button{
+.register button, .login button, .add button{
   width: 320px;
   height: 40px;
   border: 1px solid skyblue;

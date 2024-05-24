@@ -1,12 +1,19 @@
 <template>
-    <div>
-      <img class="logo" alt="Vue logo" src="../assets/dhaba.jpeg" />
-  
+    <div class="container">
+      <select style="width: 100px"  v-model="$i18n.locale" class="form-select" aria-label="Default select example">
+                <option v-for="locale in $i18n.availableLocales" :key="`locale - ${locale}`" :value="locale" >{{ locale }}</option>
+                
+            </select>
+      <img class="rounded-pill logo" alt="Vue logo" src="../assets/dhaba.jpeg" />
+      <h1>Dhaba</h1>
       <h1>Login</h1>
       <div class="register">
-        <input type="text" placeholder="Email" v-model="email" />
-        <input type="password" placeholder="Password" v-model="password"/>
-        <button v-on:click="login()">Login</button>
+        <input type="email" :placeholder="$t('Email')" v-model="email" required />
+        <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+        <input type="password" :placeholder="$t('Password')" v-model="password" required/>
+        <button v-on:click="login()">{{ $t("Login") }}</button>
         <p>
             <router-link to="/sign-up" />
         </p>
@@ -34,7 +41,7 @@
         console.warn(result)
         if(result.status == 200 && result.data.length > 0)
         {
-            localStorage.setItem("user-info", JSON.stringify(result.data))
+            localStorage.setItem("user-info", JSON.stringify(result.data[0]))
             this.$router.push({name: 'Home'})
         }
       }
@@ -51,25 +58,6 @@
   </script>
   
   <style scoped>
-  .register input{
-    width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    display: block;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid skyblue;
-    cursor: pointer;
-  }
-  
-  .register button{
-    width: 320px;
-    height: 40px;
-    border: 1px solid skyblue;
-    color: #fff;
-    background-color: skyblue;
-    cursor: pointer;
-  }
+ 
   </style>
   
